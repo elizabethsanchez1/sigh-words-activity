@@ -1,0 +1,53 @@
+/*
+shared styles 
+ */
+body, main, .container {
+  height: 100vh;
+  
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1008px;
+  background-color: #c5d5c5;
+  padding: 20px;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.startbtn {
+  font-size: 45px;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  border: none;
+}
+
+
+.restartbtn {
+  font-size: 45px;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  border: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .startbtn {
+    font-size: 16px;
+  }
+  .restartbtn {
+    font-size: 16px;
+  }
+}
+
+
+

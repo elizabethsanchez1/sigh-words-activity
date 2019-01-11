@@ -1,0 +1,47 @@
+/*
+index.html styles
+ */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.arrows {
+  display: flex;
+  align-content: center; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fas {
+  font-size: 120px;
+}
+
+p {
+  font-size: 45px;
+  text-align: center;
+}
+
+.activity {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+.activitybtn {
+  font-size: 30px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
