@@ -94,7 +94,7 @@ deleteBtn.addEventListener('click', function() {
 
 restartBtn.addEventListener('click', function() {
   console.log('restart was clicked');
-  window.location.href ="words.html";
+  window.location.href ="index.html";
 });
 
 
