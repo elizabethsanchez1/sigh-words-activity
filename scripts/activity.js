@@ -13,6 +13,9 @@ let guessList = document.querySelector('.list-of-guesses');
 const letters = document.querySelectorAll('.letters');
 for (i = 0; i < letters.length; i++) {
 	letters[i].addEventListener('click', function (event) {
+		
+		console.log('event: ', event);
+		
 		letterGuesses.push(event.target.innerHTML);
 		let singleGuess = document.createElement('li');
 		singleGuess.innerHTML = event.target.innerHTML;
