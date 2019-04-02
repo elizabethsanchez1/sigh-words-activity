@@ -25,25 +25,18 @@ for (i = 0; i < letters.length; i++) {
 			if (letterGuesses[i].toLowerCase() !== word[i]) {
 				correctGuess = false;
 				feedback.innerHTML = 'OOPS Guess Again!';
-				console.log('not all guesses are correct');
 
 			} else {
 				feedback.innerHTML = 'Good Guess!';
 			}
-
 		};
-
-
-		console.log('event target', event.target.innerHTML);
 	});
 };
+
 
 submitBtn.addEventListener('click', function () {
 	let guesses = letterGuesses.join('').toLowerCase();
 
-
-	console.log("I'm the word", word);
-	console.log('-------single string:-----', guesses);
 	if (guesses === word) {
 		feedback.innerHTML = "WINNER!";
 
@@ -61,6 +54,5 @@ deleteBtn.addEventListener('click', function () {
 });
 
 restartBtn.addEventListener('click', function () {
-	console.log('restart was clicked');
 	window.location.href = "index.html";
 });

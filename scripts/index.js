@@ -17,11 +17,9 @@
 
 
 const sighWords = ["see", "like", "we", "what", "me", "find", "now", "will", "this", "make", "she", "play", "down", "said", "help", "look", "have", "is", "he", "test"];
-console.log("normal one: ", sighWords);
 const rightArrow = document.querySelector('.fa-caret-right');
 const leftArrow = document.querySelector('.fa-caret-left');
 const startbtn = document.querySelector('.startbtn');
-
 const playActivity = document.querySelector('.play-activity');
 let currentIndex = 0;
 let shuffledArray = [];
@@ -31,7 +29,6 @@ playActivity.addEventListener('click', function () {
 	localStorage.word = shuffledArray[currentIndex];
 
 });
-
 
 function getShuffledArray(arr) {
 	// copies array in order to shuffle the words. sighwords array stays the same
@@ -53,12 +50,10 @@ startbtn.addEventListener('click', function () {
 	const hiddenItems = document.querySelectorAll('.hidden');
 	shuffledArray = getShuffledArray(sighWords);
 	updateCenterText(shuffledArray[currentIndex]);
-	console.log(hiddenItems);
 	hiddenItems.forEach(function (items) {
 		items.style.display = 'flex';
 	});
 });
-
 
 
 rightArrow.addEventListener('click', function () {
@@ -71,7 +66,6 @@ rightArrow.addEventListener('click', function () {
 	updateCenterText(nextWord);
 
 });
-
 
 leftArrow.addEventListener('click', function () {
 
